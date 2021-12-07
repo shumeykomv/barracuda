@@ -108,7 +108,7 @@ a[data-toggle="tab"] {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem; }
 
-img {
+img, iframe {
   margin: 0;
   padding: 0.25rem; }
 
