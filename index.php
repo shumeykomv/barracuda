@@ -30,6 +30,7 @@ $favicon = $this->params->get('favicon');
 $viewportHeight = $this->params->get('viewportHeight');
 $containerColor = $this->params->get('containerColor');
 $menuActiveColor = $this->params->get('menuActiveColor');
+$menuHoverColor = $this->params->get('menuHoverColor');
 $url = $this->baseurl;
 
 
@@ -64,11 +65,15 @@ if ($this->countModules('LeftAside') > 0) {
 }
 
 if ($containerColor) {
-    $ctnColor = ".ctn {background-color: $containerColor;}";
+    $ctnColor = " .ctn {background-color: $containerColor;}";
 }
 
 if ($menuActiveColor) {
     $menuAColor = " #navigation > nav > div > div > .nav .active {background-color: $menuActiveColor;}";
+}
+
+if ($menuHoverColor) {
+    $menuHColor = " #navigation nav > div > div > .nav > li a:hover {background-color: $menuHoverColor;}";
 }
 
 ?>
@@ -80,7 +85,7 @@ if ($menuActiveColor) {
 	<jdoc:include type="head" />
 
     <style type="text/css">
-        <?php echo $background . $ctnColor . $menuAColor; ?>
+        <?php echo $background . $ctnColor . $menuAColor . $menuHColor; ?>
     </style>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">

@@ -82,6 +82,10 @@
                        type="text"
                        label="TPL_BARRACUDA_ROBOTINDEX"
                        description="TPL_BARRACUDA_ROBOTINDEX_DESC"/>
+                <field name="menuHoverColor"
+                       type="color"
+                       label="TPL_BARRACUDA_MENU_HOVER_COLOR"
+                       description="TPL_BARRACUDA_MENU_HOVER_COLOR_DESC"/>
             </fieldset>
         </fields>
     </config>
