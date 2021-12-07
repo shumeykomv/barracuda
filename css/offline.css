@@ -1,0 +1,85 @@
+body {
+  	font-family: Yu Gothic UI, Ubuntu;
+	color: #B7B7B7;
+	color: rgb(183, 183, 183);
+	font-size: 14px;
+	text-align: center;
+    background: rgba(0, 0, 13, 1);
+	height: 100vh;
+}
+
+#offline-page {
+    padding-top: 30vh;
+	padding-bottom: 30vh;
+  	margin: auto;
+}
+
+#offline-sitename {
+	font-size: 40px;
+}
+
+
+.login-form {
+	border: 3px solid #b7b7b7;
+	border-radius: 5px;
+	background: #00000d;
+	width: 400px;
+	height: 35px;
+	color: #b7b7b7;
+	text-align: center;
+	margin-block: 2px;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+button {
+  cursor: pointer;  	
+  border: 3px solid #b7b7b7;
+  border-radius: 5px;
+  background: #00000d;
+  width: 400px;
+  height: 40px;
+  color: #b7b7b7;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.bi {
+  vertical-align: bottom;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;  
+}
+
+.bi-x-square {
+  float: right;
+}
+
+.border {
+  padding: .5rem;
+  border: groove;
+  border-radius: 0.25rem;
+}
+
+.alert-heading,
+.alert-message {
+  text-align: center;
+  margin-top: 0;
+}
+
+.close {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: x-large;
+  float: right;
+  position: inherit;
+  top: -14px;
+}
+
+.close:hover {
+  color: blue;
+}
+
+.close:active {
+  color: white;
+}

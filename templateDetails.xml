@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="template" version="3.8" client="site" method="upgrade">
+    <name>barracuda</name>
+    <version>1.0.1105</version>
+    <creationDate>13 November 2021</creationDate>
+    <author>Mikhail Shumeyko</author>
+    <authorEmail>shumeykomv@serverproject.ru</authorEmail>
+    <authorUrl>https://serverproject.ru</authorUrl>
+    <copyright>Copyright (C) 2020 Mikhail Shumeyko. All rights reserved.</copyright>
+    <description>TPL_BARRACUDA_XML_DESCRIPTION</description>
+
+    <files>
+        <filename>component.php</filename>
+        <filename>error.php</filename>
+        <filename>offline.php</filename>
+        <filename>index.php</filename>
+        <filename>helper.php</filename>
+        <filename>templateDetails.xml</filename>
+        <filename>template_preview.png</filename>
+        <filename>template_thumbnail.png</filename>
+        <folder>css</folder>
+        <folder>html</folder>
+        <folder>images</folder>
+        <folder>js</folder>
+        <folder>language</folder>
+    </files>
+
+    <positions>
+        <position>Navigation</position>
+        <position>LeftAside</position>
+        <position>LeftAsideSticky</position>
+        <position>Content</position>
+        <position>Breadcrumbs</position>
+        <position>Footer</position>
+        <position>Debug</position>
+    </positions>
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.tpl_barracuda.ini</language>
+        <language tag="en-GB">en-GB/en-GB.tpl_barracuda.sys.ini</language>
+        <language tag="ru-RU">ru-RU/ru-RU.tpl_barracuda.ini</language>
+        <language tag="ru-RU">ru-RU/ru-RU.tpl_barracuda.sys.ini</language>
+    </languages>
+
+    <config>
+        <fields name="params">
+            <fieldset name="advanced">
+                <field name="logotypeImage"
+                       type="media"
+                       label="TPL_BARRACUDA_LOGOTYPE_IMAGE"
+                       description="TPL_BARRACUDA_LOGOTYPE_IMAGE_DESC" />
+                <field name="logotypeLink"
+                       type="radio"
+                       default="Off"
+                       label="TPL_BARRACUDA_LOGOTYPE_LINK"
+                       description="TPL_BARRACUDA_LOGOTYPE_LINK_DESC">
+                    <option value="On">On</option>
+                    <option value="Off">Off</option>
+                </field>
+                <field name="favicon"
+                       type="media"
+                       label="TPL_BARRACUDA_FAVICON_IMAGE"
+                       description="TPL_BARRACUDA_FAVICON_IMAGE_DESC" />
+                <field name="backgroundImage"
+                       type="media"
+                       label="TPL_BARRACUDA_LOGOTYPE_BACKGROUND"
+                       description="TPL_BARRACUDA_LOGOTYPE_BACKGROUND_DESC"/>
+                <field name="containerColor"
+                       type="color"
+                       default="#1c1f20"
+                       label="TPL_BARRACUDA_CONTAINER_COLOR"
+                       description="TPL_BARRACUDA_CONTAINER_COLOR_DESC"/>
+                <field name="menuActiveColor"
+                       type="color"
+                       default="#666666"
+                       label="TPL_BARRACUDA_MENU_ACTIVE_COLOR"
+                       description="TPL_BARRACUDA_MENU_ACTIVE_COLOR_DESC"/>
+                <field name="viewportHeight"
+                       type="text"
+                       label="TPL_BARRACUDA_BODY_VIEWPORTHEIGHT"
+                       description="TPL_BARRACUDA_BODY_VIEWPORTHEIGHT_DESC"/>
+                <field name="robotIndex"
+                       type="text"
+                       label="TPL_BARRACUDA_ROBOTINDEX"
+                       description="TPL_BARRACUDA_ROBOTINDEX_DESC"/>
+            </fieldset>
+        </fields>
+    </config>
+    <updateservers>
+        <!-- Заметка: Не допускается пробелов или переносов строк между тэгам server -->
+        <server type="extension" priority="1" name="Сайт обновлений шаблона Barracuda">http://update.serverproject.ru/barracuda_TPL.xml</server>
+    </updateservers>
+</extension>
