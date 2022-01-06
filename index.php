@@ -96,7 +96,7 @@ if ($menuHoverColor) {
     <link rel="shortcut icon" href="<?php echo $favicon ?>" type="image/x-icon">
 
 </head>
-<body class="<?php echo tplBarracudaHelper::setBodySuffix(); ?>"<?php/* onresize="logoSize(_resize), featBlock(_resize), itemImageFeat(_resize), itemImageBlg(_resize), itemImagePg(_resize), itemIframeFeat(), <?php /*itemIframeBlg(), itemIframePg(),?> catChild(_resize), itemContentImagePage(_resize), itemContentImageBlg(_resize), itemContentImageFeat(_resize)" onload="logoSize(_load), featBlock(_load), itemImageFeat(_load), itemImageBlg(_load), itemImagePg(_load), itemIframeFeat(), <?php itemIframeBlg(), itemIframePg(),?> catChild(_load), itemContentImagePage(_load), itemContentImageBlg(_load), itemContentImageFeat(_load)"*/?>>
+<body class="<?php echo tplBarracudaHelper::setBodySuffix(); ?>" onresize="logoResize()">
       <?php echo tplBarracudaHelper::setAnalytics(0, 'your-analytics-id'); ?>
 
 
@@ -139,11 +139,11 @@ if ($menuHoverColor) {
 <jdoc:include type="modules" name="debug" style="none" />
 
 
-        <script type="text/javascript" src="<?php echo $this->baseurl?>/templates/<?php echo $this->template ?>/js/video_iframeFeat.js" type="text/css"></script>
-        <script type="text/javascript" src="<?php echo $this->baseurl?>/templates/<?php echo $this->template ?>/js/main.js" type="text/css"></script>
+        <script type="text/javascript" src="<?php echo $this->baseurl?>/templates/<?php echo $this->template ?>/js/video_iframeFeat.js"></script>
+        <script type="text/javascript" src="<?php echo $this->baseurl?>/templates/<?php echo $this->template ?>/js/main.js"></script>
 
-		<script type="text/javascript" src="<?php echo $this->baseurl?>/templates/<?php echo $this->template ?>/js/bootstrap.js" type="text/css"></script>
-		<script type="text/javascript" src="<?php echo $this->baseurl?>/templates/<?php echo $this->template ?>/js/bootstrap.bundle.js" type="text/css"></script>
+		<script type="text/javascript" src="<?php echo $this->baseurl?>/templates/<?php echo $this->template ?>/js/bootstrap.js"></script>
+		<script type="text/javascript" src="<?php echo $this->baseurl?>/templates/<?php echo $this->template ?>/js/bootstrap.bundle.js"></script>
 
 </body>
 </html>

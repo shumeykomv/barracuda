@@ -1415,7 +1415,7 @@ function logoSize(_load) {
 }
 
 
-function logoSize(_resize) {
+function logoResize() {
     var logo = document.querySelector(" #logo ");
     var logoImage = document.querySelector(" #logo img");
     var windW = window.innerWidth;
