@@ -157,6 +157,5 @@ if ($menuHoverColor) {
 		<script type="text/javascript" src="<?php echo $this->baseurl?>/templates/<?php echo $this->template ?>/js/bootstrap.js" type="text/css"></script>
 		<script type="text/javascript" src="<?php echo $this->baseurl?>/templates/<?php echo $this->template ?>/js/bootstrap.bundle.js" type="text/css"></script>
 
-
 </body>
 </html>
