@@ -25,6 +25,7 @@ $app = JFactory::getApplication();
 $sitename = $app->get('sitename');
 $logotypeImage = $this->params->get('logotypeImage');
 $backgroundImage = $this->params->get('backgroundImage');
+$backgroundColor = $this->params->get('backgroundColor');
 $logotypeLink = $this->params->get('logotypeLink');
 $favicon = $this->params->get('favicon');
 $viewportHeight = $this->params->get('viewportHeight');
@@ -50,6 +51,9 @@ else {
 
 if ($backgroundImage) {
     $background = ':root {background-image: url('.JUri::root().$backgroundImage.'); background-attachment: fixed; background-size: 100%;}';
+}
+else {
+    $background = ':root {background:'.$backgroundColor.';}';
 }
 
 if ($viewportHeight) {

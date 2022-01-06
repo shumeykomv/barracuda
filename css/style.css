@@ -108,7 +108,7 @@ a[data-toggle="tab"] {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem; }
 
-img {
+img, iframe {
   margin: 0;
   padding: 0.25rem; }
 
@@ -383,6 +383,9 @@ a {
   color: blue; }
 .navbar-light .navbar-nav .nav-link:active {
   color: white; }
+
+.accordion-group .accordion-body .accordion-inner nav {
+  display: block; }
 
 .pagination {
   margin-top: 1rem; }

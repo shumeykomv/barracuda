@@ -64,6 +64,11 @@
                        type="media"
                        label="TPL_BARRACUDA_LOGOTYPE_BACKGROUND"
                        description="TPL_BARRACUDA_LOGOTYPE_BACKGROUND_DESC"/>
+                <field name="backgroundColor"
+                       type="color"
+                       default="#1c1f1c"
+                       label="TPL_BARRACUDA_LOGOTYPE_BACKGROUNDCOLOR"
+                       description="TPL_BARRACUDA_LOGOTYPE_BACKGROUNDCOLOR_DESC"/>
                 <field name="containerColor"
                        type="color"
                        default="#1c1f20"
@@ -74,6 +79,10 @@
                        default="#666666"
                        label="TPL_BARRACUDA_MENU_ACTIVE_COLOR"
                        description="TPL_BARRACUDA_MENU_ACTIVE_COLOR_DESC"/>
+                <field name="menuHoverColor"
+                       type="color"
+                       label="TPL_BARRACUDA_MENU_HOVER_COLOR"
+                       description="TPL_BARRACUDA_MENU_HOVER_COLOR_DESC"/>
                 <field name="viewportHeight"
                        type="text"
                        label="TPL_BARRACUDA_BODY_VIEWPORTHEIGHT"
@@ -82,10 +91,6 @@
                        type="text"
                        label="TPL_BARRACUDA_ROBOTINDEX"
                        description="TPL_BARRACUDA_ROBOTINDEX_DESC"/>
-                <field name="menuHoverColor"
-                       type="color"
-                       label="TPL_BARRACUDA_MENU_HOVER_COLOR"
-                       description="TPL_BARRACUDA_MENU_HOVER_COLOR_DESC"/>
             </fieldset>
         </fields>
     </config>
