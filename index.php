@@ -96,7 +96,7 @@ if ($menuHoverColor) {
     <link rel="shortcut icon" href="<?php echo $favicon ?>" type="image/x-icon">
 
 </head>
-<body class="<?php echo tplBarracudaHelper::setBodySuffix(); ?>" onresize="logoResize()">
+<body class="<?php echo tplBarracudaHelper::setBodySuffix(); ?>" onload="" onresize="logoResize(), itemImagePg(), itemImageFeat(), itemImageBlg(), itemContentImagePage(), itemContentImageFeat(), itemContentImageBlg(), itemContentImage(), featBlock(), catChild()">
       <?php echo tplBarracudaHelper::setAnalytics(0, 'your-analytics-id'); ?>
 
 
