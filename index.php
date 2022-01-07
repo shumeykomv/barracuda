@@ -139,7 +139,7 @@ if ($menuHoverColor) {
 <jdoc:include type="modules" name="debug" style="none" />
 
 
-        <script type="text/javascript" src="<?php echo $this->baseurl?>/templates/<?php echo $this->template ?>/js/video_iframeFeat.js"></script>
+
         <script type="text/javascript" src="<?php echo $this->baseurl?>/templates/<?php echo $this->template ?>/js/main.js"></script>
 
 		<script type="text/javascript" src="<?php echo $this->baseurl?>/templates/<?php echo $this->template ?>/js/bootstrap.js"></script>
