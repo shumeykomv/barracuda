@@ -134,7 +134,7 @@ function catChild() {
     }
 }
 
-
+/** */
 var windW = window.innerWidth;
 if (windW >= 1400) {
     var contentItem = document.querySelectorAll(" .content-item");
@@ -267,8 +267,10 @@ function featBlock() {
     }
 }
 
+/** */
 
 
+/*
 var windW = window.innerWidth;
 if (windW > 1012) {
     var contentArticleBody = document.querySelectorAll(" .item-page .articleBody");
@@ -416,7 +418,7 @@ function itemContentImage() {
 }
 
 
-/*Begin / Ширина изображений и iframe на страницах блогов */
+/*Begin / Ширина изображений и iframe на страницах блогов *//*
 var windW = window.innerWidth;
 if (windW > 1012) {
     var contentItemsLeadingArea = document.querySelectorAll(" .blog .items-leading .leading .content-item .area-content");
@@ -885,7 +887,7 @@ function itemContentImageBlg() {
 /*End / Ширина изображений и iframe на страницах блогов */
 
 
-/*Begin / Ширина изображений и iframe на страницах блогов ДЛЯ ИЗБРАННОГО */
+/*Begin / Ширина изображений и iframe на страницах блогов ДЛЯ ИЗБРАННОГО *//*
 var windW = window.innerWidth;
 if (windW > 1012) {
     var contentItemsLeadingArea = document.querySelectorAll(" .blog-featured .items-leading .leading .content-item .area-content");
@@ -1128,7 +1130,7 @@ function itemContentImageFeat() {
 }
 /*End / Ширина изображений и iframe на страницах блогов ДЛЯ ИЗБРАННОГО */
 
-/*Begin / Ширина изображений и iframe на странице статьи */
+/*Begin / Ширина изображений и iframe на странице статьи *//*
 var windW = window.innerWidth;
 if (windW > 1012) {
     var contentArticleBody = document.querySelectorAll(" .item-page .articleBody");
