@@ -1377,7 +1377,7 @@ function itemContentImagePage() {
     }
 }
 /*End / Ширина изображений и iframe на странице статьи */
-
+/*
 var row = document.querySelectorAll(" .items-row");
 for (var r = 0; r < row.length; r++) {
     var image = row[r].querySelectorAll(" .item .content-item .item-image a img"); //Задает список img элементов в отдельной строке
@@ -1617,7 +1617,7 @@ function itemImagePg() {
         }
     }
 }
-
+*/
 /* JForm*/
 
 var Width = 22 + 'rem';
