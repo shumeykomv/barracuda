@@ -1,4 +1,6 @@
 var windW = window.innerWidth;
+
+
 if (windW > 1012) {
     var catChildren = document.querySelectorAll(" .cat");
     for (var c = 0; c < catChildren.length; c++) {
@@ -66,7 +68,6 @@ else {
 
 
 function catChild() {
-    var windW = window.innerWidth;
     if (windW > 1012) {
         var catChildren = document.querySelectorAll(" .cat");
         for (var c = 0; c < catChildren.length; c++) {
@@ -135,7 +136,6 @@ function catChild() {
 }
 
 /** */
-var windW = window.innerWidth;
 if (windW >= 1400) {
     var contentItem = document.querySelectorAll(" .content-item");
     for (var c = 0; c < contentItem.length; c++) {
@@ -202,7 +202,6 @@ if (windW >= 1400) {
 
 
 function featBlock() {
-    var windW = window.innerWidth;
     if (windW >= 1400) {
         var contentItem = document.querySelectorAll(" .content-item");
         for (var c = 0; c < contentItem.length; c++) {
