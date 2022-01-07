@@ -154,7 +154,7 @@ if (windW >= 1400) {
             let itemRowWidth = row[r].clientWidth / itemRow.length;
             for (var l = 0; l < itemRow.length; l++) {
                 itemRow[l].style.display = "block";
-                itemRow[l].style.width = itemRowWidth - (0) + "px";
+                itemRow[l].style.width = itemRowWidth - (8) + "px";
             }
         }
     }
@@ -175,7 +175,7 @@ if (windW >= 1400) {
         for (var l = 0; l < itemRow.length; l++) {
             if (itemRow.length > 1) {
                 itemRow[l].style.display = "block";
-                itemRow[l].style.width = itemRowWidth - (0) + "px";
+                itemRow[l].style.width = itemRowWidth - (8) + "px";
             } else {
                 itemRow[l].style.display = "block";
                 itemRow[l].style.width = "auto";
@@ -221,7 +221,7 @@ function featBlock() {
                 let itemRowWidth = row[r].clientWidth / itemRow.length;
                 for (var l = 0; l < itemRow.length; l++) {
                     itemRow[l].style.display = "block";
-                    itemRow[l].style.width = itemRowWidth - (0) + "px";
+                    itemRow[l].style.width = itemRowWidth - (8) + "px";
                 }
             }
         }
@@ -242,7 +242,7 @@ function featBlock() {
             for (var l = 0; l < itemRow.length; l++) {
                 if (itemRow.length > 1) {
                     itemRow[l].style.display = "block";
-                    itemRow[l].style.width = itemRowWidth - (0) + "px";
+                    itemRow[l].style.width = itemRowWidth - (8) + "px";
                 } else {
                     itemRow[l].style.display = "block";
                     itemRow[l].style.width = "auto";
