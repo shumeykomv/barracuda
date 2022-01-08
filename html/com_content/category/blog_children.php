@@ -17,7 +17,7 @@ $user   = JFactory::getUser();
 $groups = $user->getAuthorisedViewLevels();
 
 if ($this->maxLevel != 0 && count($this->children[$this->category->id]) > 0) : ?>
-
+<div class="cat-children-pull">
 	<?php foreach ($this->children[$this->category->id] as $id => $child) : ?>
 		<?php // Check whether category access level allows access to subcategories. ?>
 		<?php if (in_array($child->access, $groups)) : ?>
@@ -26,6 +26,8 @@ if ($this->maxLevel != 0 && count($this->children[$this->category->id]) > 0) : ?
 					$class = ' class="last"';
 				endif;
 */			?>
+
+
 			<div<?php echo $class; ?>>
 				<?php //$class = ''; ?>
 				<?php if ($lang->isRtl()) : ?>
@@ -79,8 +81,10 @@ if ($this->maxLevel != 0 && count($this->children[$this->category->id]) > 0) : ?
 					</div>
 				<?php endif; ?>
 			</div>
+
+
 			<?php endif; ?>
 		<?php endif; ?>
 	<?php endforeach; ?>
-
+	</div>
 <?php endif;

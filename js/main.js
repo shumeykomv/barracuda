@@ -2,30 +2,32 @@ var windW = window.innerWidth;
 
 
 if (windW > 1012) {
-    var catChildren = document.querySelectorAll(" .cat");
-    for (var c = 0; c < catChildren.length; c++) {
-        catChildren[c].style.display = "block";
-        catChildren[c].style.width = "-moz-available";
-        catChildren[c].style.width = "-webkit-fill-available";
-        var catChildDesc = catChildren[c].querySelectorAll(".category-desc");
-        for (var d = 0; d < catChildDesc.length; d++) {
-            var catChildDescWidth = catChildDesc[d].clientWidth;
-            catChildDesc[d].style.display = "block";
-            catChildDesc[d].style.width = "-moz-available";
-            catChildDesc[d].style.width = "-webkit-fill-available";
-            catChildDescTagP = catChildDesc[d].querySelectorAll("p")
-            for (var p = 0; p < catChildDescTagP.length; p++) {
-                if (catChildDescTagP.length > 0){
-                    catChildDescTagP[p].style.display = "inline-flex";
+    var catChildrenPull = document.querySelectorAll(" .cat-children-pull");
+    for (let ccp = 0; ccp < catChildrenPull.length; ccp++) {
+        var cat = catChildrenPull[ccp].querySelectorAll(" .cat");
+        for (var c = 0; c < cat.length; c++) {
+            cat[c].style.display = "block";
+            cat[c].style.width = catChildrenPull[ccp].clientWidth / cat.length + "px";
+            var catChildDesc = cat[c].querySelectorAll(".category-desc");
+            for (var d = 0; d < catChildDesc.length; d++) {
+                var catChildDescWidth = catChildDesc[d].clientWidth;
+                catChildDesc[d].style.display = "block";
+                catChildDesc[d].style.width = "-moz-available";
+                catChildDesc[d].style.width = "-webkit-fill-available";
+                catChildDescTagP = catChildDesc[d].querySelectorAll("p")
+                for (var p = 0; p < catChildDescTagP.length; p++) {
+                    if (catChildDescTagP.length > 0) {
+                        catChildDescTagP[p].style.display = "inline-flex";
+                        
+                        //далее установка размера изображений
 
-                    //далее установка размера изображений
+                        var ImgDesc = catChildDescTagP[p].querySelectorAll("img");
+                        for (var img = 0; img < ImgDesc.length; img++) {
+                            if (ImgDesc.length > 0) {
+                                ImgDesc[img].style.display = "block";
+                                ImgDesc[img].style.width = (catChildDescWidth / ImgDesc.length) + "px";
 
-                    var ImgDesc = catChildDescTagP[p].querySelectorAll("img");
-                    for (var img = 0; img < ImgDesc.length; img++) {
-                        if (ImgDesc.length > 0) {
-                            ImgDesc[img].style.display = "block";
-                            ImgDesc[img].style.width = (catChildDescWidth / ImgDesc.length) + "px";
-
+                            }
                         }
                     }
                 }
@@ -34,12 +36,12 @@ if (windW > 1012) {
     }
 }
 else {
-    var catChildren = document.querySelectorAll(" .cat");
-    for (var c = 0; c < catChildren.length; c++) {
-        catChildren[c].style.display = "block";
-        catChildren[c].style.width = "-moz-available";
-        catChildren[c].style.width = "-webkit-fill-available";
-        var catChildDesc = catChildren[c].querySelectorAll(".category-desc");
+    var cat = document.querySelectorAll(" .cat");
+    for (var c = 0; c < cat.length; c++) {
+        cat[c].style.display = "block";
+        cat[c].style.width = "-moz-available";
+        cat[c].style.width = "-webkit-fill-available";
+        var catChildDesc = cat[c].querySelectorAll(".category-desc");
         for (var d = 0; d < catChildDesc.length; d++) {
             var catChildDescWidth = catChildDesc[d].clientWidth;
             catChildDesc[d].style.display = "block";
@@ -69,31 +71,32 @@ else {
 
 function catChild() {
     if (windW > 1012) {
-        var catChildren = document.querySelectorAll(" .cat");
-        for (var c = 0; c < catChildren.length; c++) {
-            catChildren[c].style.display = "block";
-            catChildren[c].style.width = "-moz-available";
-            catChildren[c].style.width = "-webkit-fill-available";
-            var catChildDesc = catChildren[c].querySelectorAll(".category-desc");
-            for (var d = 0; d < catChildDesc.length; d++) {
-                var catChildDescWidth = catChildDesc[d].clientWidth;
-                catChildDesc[d].style.display = "block";
-                catChildDesc[d].style.width = "-moz-available";
-                catChildDesc[d].style.width = "-webkit-fill-available";
-                catChildDescTagP = catChildDesc[d].querySelectorAll("p")
-                for (var p = 0; p < catChildDescTagP.length; p++) {
-                    if (catChildDescTagP.length > 0) {
-                        catChildDescTagP[p].style.display = "inline-flex";
-
-
-                        //далее установка размера изображений
-
-                        var ImgDesc = catChildDescTagP[p].querySelectorAll("img");
-                        for (var img = 0; img < ImgDesc.length; img++) {
-                            if (ImgDesc.length > 0) {
-                                ImgDesc[img].style.display = "block";
-                                ImgDesc[img].style.width = (catChildDescWidth / ImgDesc.length) + "px";
-
+        var catChildrenPull = document.querySelectorAll(" .cat-children-pull");
+        for (let ccp = 0; ccp < catChildrenPull.length; ccp++) {
+            var cat = catChildrenPull[ccp].querySelectorAll(" .cat");
+            for (var c = 0; c < cat.length; c++) {
+                cat[c].style.display = "block";
+                cat[c].style.width = catChildrenPull[ccp].clientWidth / cat.length + "px";
+                var catChildDesc = cat[c].querySelectorAll(".category-desc");
+                for (var d = 0; d < catChildDesc.length; d++) {
+                    var catChildDescWidth = catChildDesc[d].clientWidth;
+                    catChildDesc[d].style.display = "block";
+                    catChildDesc[d].style.width = "-moz-available";
+                    catChildDesc[d].style.width = "-webkit-fill-available";
+                    catChildDescTagP = catChildDesc[d].querySelectorAll("p")
+                    for (var p = 0; p < catChildDescTagP.length; p++) {
+                        if (catChildDescTagP.length > 0){
+                            catChildDescTagP[p].style.display = "inline-flex";
+                            
+                            //далее установка размера изображений
+    
+                            var ImgDesc = catChildDescTagP[p].querySelectorAll("img");
+                            for (var img = 0; img < ImgDesc.length; img++) {
+                                if (ImgDesc.length > 0) {
+                                    ImgDesc[img].style.display = "block";
+                                    ImgDesc[img].style.width = (catChildDescWidth / ImgDesc.length) + "px";
+    
+                                }
                             }
                         }
                     }
@@ -101,12 +104,12 @@ function catChild() {
             }
         }
     } else {
-        var catChildren = document.querySelectorAll(" .cat");
-        for (var c = 0; c < catChildren.length; c++) {
-            catChildren[c].style.display = "block";
-            catChildren[c].style.width = "-moz-available";
-            catChildren[c].style.width = "-webkit-fill-available";
-            var catChildDesc = catChildren[c].querySelectorAll(".category-desc");
+        var cat = document.querySelectorAll(" .cat");
+        for (var c = 0; c < cat.length; c++) {
+            cat[c].style.display = "block";
+            cat[c].style.width = "-moz-available";
+            cat[c].style.width = "-webkit-fill-available";
+            var catChildDesc = cat[c].querySelectorAll(".category-desc");
             for (var d = 0; d < catChildDesc.length; d++) {
                 var catChildDescWidth = catChildDesc[d].clientWidth;
                 catChildDesc[d].style.display = "block";
