@@ -70,6 +70,7 @@ else {
 
 
 function catChild() {
+    var windW = window.innerWidth;
     if (windW > 1012) {
         var catChildrenPull = document.querySelectorAll(" .cat-children-pull");
         for (let ccp = 0; ccp < catChildrenPull.length; ccp++) {
@@ -176,12 +177,9 @@ if (windW >= 1400) {
         let itemRow = row[r].getElementsByClassName('item');
         let itemRowWidth = row[r].clientWidth / itemRow.length;
         for (var l = 0; l < itemRow.length; l++) {
-            if (itemRow.length > 1) {
+            if (itemRow.length > 0) {
                 itemRow[l].style.display = "block";
                 itemRow[l].style.width = itemRowWidth - (8) + "px";
-            } else {
-                itemRow[l].style.display = "block";
-                itemRow[l].style.width = "auto";
             }
         }
     }
@@ -205,6 +203,7 @@ if (windW >= 1400) {
 
 
 function featBlock() {
+    var windW = window.innerWidth;
     if (windW >= 1400) {
         var contentItem = document.querySelectorAll(" .content-item");
         for (var c = 0; c < contentItem.length; c++) {
@@ -242,12 +241,9 @@ function featBlock() {
             let itemRow = row[r].getElementsByClassName('item');
             let itemRowWidth = row[r].clientWidth / itemRow.length;
             for (var l = 0; l < itemRow.length; l++) {
-                if (itemRow.length > 1) {
+                if (itemRow.length > 0) {
                     itemRow[l].style.display = "block";
                     itemRow[l].style.width = itemRowWidth - (8) + "px";
-                } else {
-                    itemRow[l].style.display = "block";
-                    itemRow[l].style.width = "auto";
                 }
             }
         }
@@ -266,7 +262,7 @@ function featBlock() {
                 item[i].style.width = "auto";
             }
         }
-    }
+    }    
 }
 
 /* End / Block for Blog */
@@ -430,17 +426,12 @@ if (windW > 1012) {
             }
             let Imag = tagP[p].querySelectorAll("img");
             for (let img = 0; img < Imag.length; img++) {
-                if (Imag.length = 1) {
+                if (Imag.length > 0) {
                     Imag[img].style.display = "block";
-                    Imag[img].style.width = (contentArticleBodyWidth / 2) + "px";
-                    Imag[img].style.height = "auto";
-                    Imag[img].style.float = "left";
-                } if (Imag.length > 1) {
-                    Imag[img].style.display = "block";
-                    Imag[img].style.width = (contentArticleBodyWidth / Imag.length) + "px";
+                    Imag[img].style.width = (contentArticleBodyWidth) + "px";
                     Imag[img].style.height = "auto";
                     Imag[img].style.float = "none";
-                    tagP[p].style.display = "inline-flex";
+                    tagP[p].style.display = "block";
                 }
             }
             let Iframe = tagP[p].querySelectorAll("iframe");
@@ -490,6 +481,7 @@ if (windW > 1012) {
                     Imag[img].style.width = (contentAreaContentWidth) + "px";
                     Imag[img].style.height = "auto";
                     Imag[img].style.float = "left";
+                    tagP[p].style.display = "inline-block";
                 } 
             }
             let Iframe = tagP[p].querySelectorAll("iframe");
@@ -509,6 +501,7 @@ if (windW > 1012) {
 
 
 function itemContentImage() {
+    var windW = window.innerWidth;
     if (windW > 1012) {
         var contentItemImage = document.querySelectorAll(" .item-image");
         for (var cii = 0; cii < contentItemImage.length; cii++){
@@ -523,7 +516,8 @@ function itemContentImage() {
         for (var cab = 0; cab < contentArticleBody.length; cab++) {
             var contentArticleBodyWidth = contentArticleBody[cab].clientWidth;
             let tagP = contentArticleBody[cab].querySelectorAll("p");
-            for (let p = 0; p < tagP.length; p++) {    
+            for (let p = 0; p < tagP.length; p++) {
+    
                 let tagA = tagP[p].querySelectorAll(" a ");
                 for (let a = 0; a < tagA.length; a++) {
                     if (tagA.length > 0) {
@@ -570,7 +564,6 @@ function itemContentImage() {
                         Iframe[ifrm].style.width = (contentArticleBodyWidth) + "px";
                         Iframe[ifrm].style.height = (contentArticleBodyWidth / 16 * 9) + "px";
                         Iframe[ifrm].style.float = "left";
-                        tagP[p].style.height = (contentArticleBodyWidth / 16 * 9) + "px";
                     } 
                 }
             }
@@ -579,7 +572,7 @@ function itemContentImage() {
         for (let cac = 0; cac < contentAreaContent.length; cac++) {
             var contentAreaContentWidth = contentAreaContent[cac].clientWidth;
             let tagP = contentAreaContent[cac].querySelectorAll("p"); 
-            for (let p = 0; p < tagP.length; p++) {     
+            for (let p = 0; p < tagP.length; p++) { 
                 let tagA = tagP[p].querySelectorAll(" a ");
                 for (let a = 0; a < tagA.length; a++) {
                     if (tagA.length > 0) {
@@ -645,7 +638,8 @@ function itemContentImage() {
         for (var cab = 0; cab < contentArticleBody.length; cab++) {
             var contentArticleBodyWidth = contentArticleBody[cab].clientWidth;
             let tagP = contentArticleBody[cab].querySelectorAll("p");
-            for (let p = 0; p < tagP.length; p++) {    
+            for (let p = 0; p < tagP.length; p++) {
+    
                 let tagA = tagP[p].querySelectorAll(" a ");
                 for (let a = 0; a < tagA.length; a++) {
                     if (tagA.length > 0) {
@@ -664,17 +658,12 @@ function itemContentImage() {
                 }
                 let Imag = tagP[p].querySelectorAll("img");
                 for (let img = 0; img < Imag.length; img++) {
-                    if (Imag.length = 1) {
+                    if (Imag.length > 0) {
                         Imag[img].style.display = "block";
-                        Imag[img].style.width = (contentArticleBodyWidth / 2) + "px";
-                        Imag[img].style.height = "auto";
-                        Imag[img].style.float = "left";
-                    } if (Imag.length > 1) {
-                        Imag[img].style.display = "block";
-                        Imag[img].style.width = (contentArticleBodyWidth / Imag.length) + "px";
+                        Imag[img].style.width = (contentArticleBodyWidth) + "px";
                         Imag[img].style.height = "auto";
                         Imag[img].style.float = "none";
-                        tagP[p].style.display = "inline-flex";
+                        tagP[p].style.display = "block";
                     }
                 }
                 let Iframe = tagP[p].querySelectorAll("iframe");
@@ -684,7 +673,6 @@ function itemContentImage() {
                         Iframe[ifrm].style.width = (contentArticleBodyWidth) + "px";
                         Iframe[ifrm].style.height = (contentArticleBodyWidth / 16 * 9) + "px";
                         Iframe[ifrm].style.float = "left";
-                        tagP[p].style.height = (contentArticleBodyWidth / 16 * 9) + "px";
                     } 
                 }
             }
@@ -693,7 +681,7 @@ function itemContentImage() {
         for (let cac = 0; cac < contentAreaContent.length; cac++) {
             var contentAreaContentWidth = contentAreaContent[cac].clientWidth;
             let tagP = contentAreaContent[cac].querySelectorAll("p"); 
-            for (let p = 0; p < tagP.length; p++) {     
+            for (let p = 0; p < tagP.length; p++) {
                 let tagA = tagP[p].querySelectorAll(" a ");
                 for (let a = 0; a < tagA.length; a++) {
                     if (tagA.length > 0) {
@@ -725,6 +713,7 @@ function itemContentImage() {
                         Imag[img].style.width = (contentAreaContentWidth) + "px";
                         Imag[img].style.height = "auto";
                         Imag[img].style.float = "left";
+                        tagP[p].style.display = "inline-block";
                     } 
                 }
                 let Iframe = tagP[p].querySelectorAll("iframe");

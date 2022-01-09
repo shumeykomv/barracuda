@@ -19,9 +19,12 @@
   margin: 4px;
   border-color: #fff; }
 
-.cat-children-pull {
-  display: flex; }
-
+@media(min-width: 1013px) {
+  .cat-children-pull {
+    display: flex; } }
+@media(max-width: 1012px) {
+  .cat-children-pull {
+    display: block; } }
 #breadcrumbs {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
