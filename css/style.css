@@ -130,7 +130,8 @@ img, iframe {
   margin-right: 0.5rem; }
 
 .article-info {
-  display: inline-block; }
+  display: inline-block;
+  width: 100%; }
   .article-info > * {
     margin: 0.125rem;
     padding: 0.25rem;
@@ -144,7 +145,12 @@ img, iframe {
 
 .tags {
   list-style-type: none;
-  display: contents; }
+  display: inline-block;
+  width: 100%;
+  padding: 0; }
+  .tags li {
+    display: inline-block;
+    padding: 0 0.25rem; }
 
 .content_rating, .content_rating > * {
   display: inline-block;
@@ -162,7 +168,7 @@ img, iframe {
   display: block; }
 
 #adminForm > * > .filter-search-form {
-  margin-top: 4px; }
+  margin-top: 3px; }
   #adminForm > * > .filter-search-form > input {
     height: 2rem; }
 
@@ -392,6 +398,11 @@ a {
 
 .accordion-group .accordion-body .accordion-inner nav {
   display: block; }
+
+.chzn-container {
+  margin-top: 0.25rem;
+  margin-left: 0.5rem !important;
+  width: 4rem !important; }
 
 .pagination {
   margin-top: 1rem; }
