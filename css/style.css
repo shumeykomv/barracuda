@@ -88,7 +88,7 @@ a[data-toggle="tab"] {
   display: block; }
 
 .nav-tabs > li > a {
-  display: block;
+  display: block !important;
   width: -moz-available;
   padding: 5px;
   border-radius: 0.5rem 0.5rem 0 0; }
