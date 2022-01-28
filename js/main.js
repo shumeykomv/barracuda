@@ -328,6 +328,10 @@ if (windW > 1012) {
             let Iframe = tagP[p].querySelectorAll("iframe");
             for (let ifrm = 0; ifrm < Iframe.length; ifrm++) {
                 if (Iframe.length > 0) {
+
+
+
+
                     Iframe[ifrm].style.display = "block";
                     Iframe[ifrm].style.width = (contentArticleBodyWidth) + "px";
                     Iframe[ifrm].style.height = (contentArticleBodyWidth / 16 * 9) + "px";
@@ -383,11 +387,17 @@ if (windW > 1012) {
             let Iframe = tagP[p].querySelectorAll("iframe");
             for (let ifrm = 0; ifrm < Iframe.length; ifrm++) {
                 if (Iframe.length > 0) {
-                    Iframe[ifrm].style.display = "block";
-                    Iframe[ifrm].style.width = (contentAreaContentWidth) + "px";
-                    Iframe[ifrm].style.height = (contentAreaContentWidth / 16 * 9) + "px";
-                    Iframe[ifrm].style.float = "left";
-                    tagP[p].style.height = (contentAreaContentWidth / 16 * 9) + "px";
+                    let attrType = Iframe[ifrm].getAttribute('type');
+                    if(attrType == 'custom') {
+                    
+                    }
+                    else {
+                        Iframe[ifrm].style.display = "block";
+                        Iframe[ifrm].style.width = (contentAreaContentWidth) + "px";
+                        Iframe[ifrm].style.height = (contentAreaContentWidth / 16 * 9) + "px";
+                        Iframe[ifrm].style.float = "left";
+                        tagP[p].style.height = (contentAreaContentWidth / 16 * 9) + "px";
+                    }
                 } 
             }
         }
@@ -487,11 +497,17 @@ if (windW > 1012) {
             let Iframe = tagP[p].querySelectorAll("iframe");
             for (let ifrm = 0; ifrm < Iframe.length; ifrm++) {
                 if (Iframe.length > 0) {
-                    Iframe[ifrm].style.display = "block";
-                    Iframe[ifrm].style.width = (contentAreaContentWidth) + "px";
-                    Iframe[ifrm].style.height = (contentAreaContentWidth / 16 * 9) + "px";
-                    Iframe[ifrm].style.float = "left";
-                    tagP[p].style.height = (contentAreaContentWidth / 16 * 9) + "px";
+                    let attrType = Iframe[ifrm].getAttribute('type');
+                    if(attrType == 'custom') {
+                    
+                    }
+                    else {
+                        Iframe[ifrm].style.display = "block";
+                        Iframe[ifrm].style.width = (contentAreaContentWidth) + "px";
+                        Iframe[ifrm].style.height = (contentAreaContentWidth / 16 * 9) + "px";
+                        Iframe[ifrm].style.float = "left";
+                        tagP[p].style.height = (contentAreaContentWidth / 16 * 9) + "px";
+                    }
                 } 
             }
         }
@@ -560,6 +576,10 @@ function itemContentImage() {
                 let Iframe = tagP[p].querySelectorAll("iframe");
                 for (let ifrm = 0; ifrm < Iframe.length; ifrm++) {
                     if (Iframe.length > 0) {
+    
+    
+    
+    
                         Iframe[ifrm].style.display = "block";
                         Iframe[ifrm].style.width = (contentArticleBodyWidth) + "px";
                         Iframe[ifrm].style.height = (contentArticleBodyWidth / 16 * 9) + "px";
@@ -615,11 +635,17 @@ function itemContentImage() {
                 let Iframe = tagP[p].querySelectorAll("iframe");
                 for (let ifrm = 0; ifrm < Iframe.length; ifrm++) {
                     if (Iframe.length > 0) {
-                        Iframe[ifrm].style.display = "block";
-                        Iframe[ifrm].style.width = (contentAreaContentWidth) + "px";
-                        Iframe[ifrm].style.height = (contentAreaContentWidth / 16 * 9) + "px";
-                        Iframe[ifrm].style.float = "left";
-                        tagP[p].style.height = (contentAreaContentWidth / 16 * 9) + "px";
+                        let attrType = Iframe[ifrm].getAttribute('type');
+                        if(attrType == 'custom') {
+                        
+                        }
+                        else {
+                            Iframe[ifrm].style.display = "block";
+                            Iframe[ifrm].style.width = (contentAreaContentWidth) + "px";
+                            Iframe[ifrm].style.height = (contentAreaContentWidth / 16 * 9) + "px";
+                            Iframe[ifrm].style.float = "left";
+                            tagP[p].style.height = (contentAreaContentWidth / 16 * 9) + "px";
+                        }
                     } 
                 }
             }
@@ -719,11 +745,17 @@ function itemContentImage() {
                 let Iframe = tagP[p].querySelectorAll("iframe");
                 for (let ifrm = 0; ifrm < Iframe.length; ifrm++) {
                     if (Iframe.length > 0) {
-                        Iframe[ifrm].style.display = "block";
-                        Iframe[ifrm].style.width = (contentAreaContentWidth) + "px";
-                        Iframe[ifrm].style.height = (contentAreaContentWidth / 16 * 9) + "px";
-                        Iframe[ifrm].style.float = "left";
-                        tagP[p].style.height = (contentAreaContentWidth / 16 * 9) + "px";
+                        let attrType = Iframe[ifrm].getAttribute('type');
+                        if(attrType == 'custom') {
+                        
+                        }
+                        else {
+                            Iframe[ifrm].style.display = "block";
+                            Iframe[ifrm].style.width = (contentAreaContentWidth) + "px";
+                            Iframe[ifrm].style.height = (contentAreaContentWidth / 16 * 9) + "px";
+                            Iframe[ifrm].style.float = "left";
+                            tagP[p].style.height = (contentAreaContentWidth / 16 * 9) + "px";
+                        }
                     } 
                 }
             }
