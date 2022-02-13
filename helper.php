@@ -263,6 +263,7 @@ class TplBarracudaHelper
 	 */
 	static public function loadJs()
 	{
+		HTMLHelper::_('script', 'main.js', ['version' => 'auto', 'relative' => true]);
 		HTMLHelper::_('script', 'bootstrap.js', ['version' => 'auto', 'relative' => true]);
         HTMLHelper::_('script', 'bootstrap.bundle.js', ['version' => 'auto', 'relative' => true]);
 

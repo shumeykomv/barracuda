@@ -84,7 +84,6 @@ if ($menuHoverColor) {
 <!DOCTYPE html>
 <html lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>">
 <head>
-    <?php include 'metrika.php';?>
 
 	<jdoc:include type="head" />
 

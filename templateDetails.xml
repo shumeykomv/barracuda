@@ -71,6 +71,7 @@
                        description="TPL_BARRACUDA_LOGOTYPE_BACKGROUNDCOLOR_DESC"/>
                 <field name="containerColor"
                        type="color"
+                       format="rgba"
                        default="rgba(232, 232, 232, 0.9)"
                        label="TPL_BARRACUDA_CONTAINER_COLOR"
                        description="TPL_BARRACUDA_CONTAINER_COLOR_DESC"/>
