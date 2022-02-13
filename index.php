@@ -142,8 +142,6 @@ if ($menuHoverColor) {
 
         <script type="text/javascript" src="<?php echo $this->baseurl?>/templates/<?php echo $this->template ?>/js/main.js"></script>
 
-		<script type="text/javascript" src="<?php echo $this->baseurl?>/templates/<?php echo $this->template ?>/js/bootstrap.js"></script>
-		<script type="text/javascript" src="<?php echo $this->baseurl?>/templates/<?php echo $this->template ?>/js/bootstrap.bundle.js"></script>
 
 </body>
 </html>

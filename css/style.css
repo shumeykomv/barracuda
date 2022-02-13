@@ -230,9 +230,9 @@ a {
       background-color: #17151599; }
 .icons .open > .dropdown-menu {
   display: inline-block;
-  position: absolute;
+  position: relative;
   top: 3px;
-  left: 50px; }
+  left: 0px; }
 
 .icon {
   color: black;

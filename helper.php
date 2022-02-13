@@ -241,7 +241,8 @@ class TplBarracudaHelper
 	static public function loadCss()
 	{
 		HTMLHelper::_('stylesheet', 'style.css', ['version' => 'auto', 'relative' => true]);
-        HTMLHelper::_('stylesheet', 'bootstrap.css', ['version' => 'auto', 'relative' => true]);
+        HTMLHelper::_('stylesheet', 'bootstrap-reboot.rtl.css', ['version' => 'auto', 'relative' => true]);
+		HTMLHelper::_('stylesheet', 'bootstrap.css', ['version' => 'auto', 'relative' => true]);
 
 		// Check for a custom CSS file
 		$userCss = JPATH_SITE . '/templates/' . self::template() . '/css/user.css';
@@ -261,19 +262,10 @@ class TplBarracudaHelper
 	 * @since  1.0
 	 */
 	static public function loadJs()
-	{/*
-		HTMLHelper::_('script', 'logotype.js', ['version' => 'auto', 'relative' => true]);
-        HTMLHelper::_('script', 'video_iframePage.js', ['version' => 'auto', 'relative' => true]);
-        HTMLHelper::_('script', 'video_iframeBlg.js', ['version' => 'auto', 'relative' => true]);
-        HTMLHelper::_('script', 'video_iframeFeat.js', ['version' => 'auto', 'relative' => true]);
-        HTMLHelper::_('script', 'itemBlock.js', ['version' => 'auto', 'relative' => true]);
-        HTMLHelper::_('script', 'itemImageFeat.js', ['version' => 'auto', 'relative' => true]);
-        HTMLHelper::_('script', 'itemImageBlg.js', ['version' => 'auto', 'relative' => true]);
-        HTMLHelper::_('script', 'itemImagePage.js', ['version' => 'auto', 'relative' => true]);
-        HTMLHelper::_('script', 'jform.js', ['version' => 'auto', 'relative' => true]);
-        HTMLHelper::_('script', 'bootstrap.js', ['version' => 'auto', 'relative' => true]);
+	{
+		HTMLHelper::_('script', 'bootstrap.js', ['version' => 'auto', 'relative' => true]);
         HTMLHelper::_('script', 'bootstrap.bundle.js', ['version' => 'auto', 'relative' => true]);
-		*/
+
 	}
 
 	/**
