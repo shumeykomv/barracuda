@@ -73,7 +73,7 @@ if ($containerColor) {
 }
 
 if ($menuActiveColor) {
-    $menuAColor = " #navigation > nav > div > div > .nav .active {background-color: $menuActiveColor;}";
+    $menuAColor = " #navigation > nav > div > div > .nav .active a {background-color: $menuActiveColor;}";
 }
 
 if ($menuHoverColor) {

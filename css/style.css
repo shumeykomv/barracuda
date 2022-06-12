@@ -276,81 +276,82 @@ a {
 @media(max-width: 1012px) {
   #leftaside {
     border-right: 0px; } }
-#leftaside > div nav > div {
+#leftaside div nav div {
   padding: 0; }
-  #leftaside > div nav > div > .navbar-brand {
+  #leftaside div nav div .navbar-brand {
     margin: 0; }
-  #leftaside > div nav > div .navbar-toggler {
+  #leftaside div nav div .navbar-toggler {
     display: none; }
-  #leftaside > div nav > div #navbarSupportedContent {
+  #leftaside div nav div #navbarSupportedContent {
     display: block; }
-  #leftaside > div nav > div div > .nav {
+  #leftaside div nav div div > .nav {
     list-style-type: none;
-    display: block; }
-    #leftaside > div nav > div div > .nav > li .nav-child {
+    display: block;
+    padding-left: 2rem; }
+    #leftaside div nav div div > .nav li .nav-child {
       list-style-type: square; }
-      #leftaside > div nav > div div > .nav > li .nav-child li > a {
+      #leftaside div nav div div > .nav li .nav-child li > a {
         display: block;
         padding: 0.35rem; }
-        #leftaside > div nav > div div > .nav > li .nav-child li > a:active {
+        #leftaside div nav div div > .nav li .nav-child li > a:active {
           background-color: #17151599; }
-        #leftaside > div nav > div div > .nav > li .nav-child li > a:hover {
+        #leftaside div nav div div > .nav li .nav-child li > a:hover {
           background-color: #171515bb;
           border-radius: 0.125rem;
           color: white; }
-      #leftaside > div nav > div div > .nav > li .nav-child:hover {
+      #leftaside div nav div div > .nav li .nav-child:hover {
         background-color: #171515bb;
         border-radius: 0.125rem;
         color: white; }
-    #leftaside > div nav > div div > .nav > li a {
+    #leftaside div nav div div > .nav li a {
       display: block;
       padding: 0.35rem; }
-      #leftaside > div nav > div div > .nav > li a:hover {
+      #leftaside div nav div div > .nav li a:hover {
         background-color: #171515bb;
         border-radius: 0.125rem;
         color: white; }
-      #leftaside > div nav > div div > .nav > li a:active {
+      #leftaside div nav div div > .nav li a:active {
         background-color: #17151599; }
-#leftaside > div #login-form {
+#leftaside div #login-form {
   text-align: center; }
-  #leftaside > div #login-form > * {
+  #leftaside div #login-form * {
     display: block;
     margin: 0.25rem 0;
     text-align: center;
     width: -moz-available;
     width: -webkit-fill-available; }
-  #leftaside > div #login-form > div {
+  #leftaside div #login-form div {
     display: inline-block; }
-    #leftaside > div #login-form > div > * {
+    #leftaside div #login-form div * {
       padding: 0 0.5rem; }
-    #leftaside > div #login-form > div > .btn {
+    #leftaside div #login-form div .btn {
       padding: 0.25rem; }
-    #leftaside > div #login-form > div > .control-group {
+    #leftaside div #login-form div .control-group {
       margin: 2px 0; }
-    #leftaside > div #login-form > div > #form-login-username, #leftaside > div #login-form > div > #form-login-password, #leftaside > div #login-form > div > #form-login-secretkey {
+    #leftaside div #login-form div #form-login-username, #leftaside div #login-form div #form-login-password, #leftaside div #login-form div #form-login-secretkey {
       width: -moz-available;
       width: -webkit-fill-available; }
-      #leftaside > div #login-form > div > #form-login-username > .controls, #leftaside > div #login-form > div > #form-login-password > .controls, #leftaside > div #login-form > div > #form-login-secretkey > .controls {
+      #leftaside div #login-form div #form-login-username .controls, #leftaside div #login-form div #form-login-password .controls, #leftaside div #login-form div #form-login-secretkey .controls {
         width: inherit; }
-        #leftaside > div #login-form > div > #form-login-username > .controls > div > input, #leftaside > div #login-form > div > #form-login-password > .controls > div > input, #leftaside > div #login-form > div > #form-login-secretkey > .controls > div > input {
+        #leftaside div #login-form div #form-login-username .controls div input, #leftaside div #login-form div #form-login-password .controls div input, #leftaside div #login-form div #form-login-secretkey .controls div input {
           width: -moz-available;
           width: -webkit-fill-available;
           text-align: center; }
-    #leftaside > div #login-form > div > #form-login-secretkey > .controls > div > .btn {
+    #leftaside div #login-form div #form-login-secretkey .controls div .btn {
       display: none; }
-    #leftaside > div #login-form > div > #form-login-remember {
+    #leftaside div #login-form div #form-login-remember {
       display: block; }
-#leftaside > div .form-inline > .userdata > .unstyled {
+#leftaside div .form-inline > .userdata > .unstyled {
   list-style-type: none; }
-#leftaside > div div > .search > form {
+#leftaside div div > .search > form {
   display: block; }
-  #leftaside > div div > .search > form > * {
+  #leftaside div div > .search > form > * {
     display: block;
     margin: 0.25rem 0;
     text-align: center;
     width: -moz-available;
     width: -webkit-fill-available; }
-  #leftaside > div div > .search > form > .element-invisible {
+  #leftaside div div > .search > form > .element-invisible {
     display: block;
     font-size: 16px;
     font-weight: bold;
@@ -370,11 +371,12 @@ a {
   #navigation nav > div > div > .nav {
     list-style-type: none;
     padding: 0;
-    margin: 0 auto; }
+    margin: 0 auto;
+    text-align: center; }
   #navigation nav > div > div > .nav > li {
     width: auto;
     display: inline-block;
-    padding: 0;
+    padding: 0.5rem 0;
     margin: 0; }
     #navigation nav > div > div > .nav > li a, #navigation nav > div > div > .nav > li span {
       text-decoration: none;
@@ -383,7 +385,9 @@ a {
       font-weight: bold;
       box-sizing: border-box;
       display: block;
-      padding: 1rem; }
+      padding: 1rem;
+      margin: 0 0.125rem;
+      border-radius: 0.3rem; }
     #navigation nav > div > div > .nav > li a:hover {
       background-color: #999999; }
     #navigation nav > div > div > .nav > li a:active {
