@@ -202,6 +202,9 @@ a {
 .row {
   margin: 0; }
 
+@media(max-width: 991px) {
+  body {
+    margin: 0; } }
 .clearfix > h2 {
   display: inline-block;
   vertical-align: top;
@@ -766,21 +769,7 @@ a {
   #logo img {
     margin: 0;
     padding: 0;
-    height: auto; }
-@media(min-width: 1920px) {
-  #logo img {
-    width: 1320px; } }
-@media(min-width: 1280px) and (max-width: 1919px) {
-  #logo img {
-    width: 1140px; } }
-@media(min-width: 1013px) and (max-width: 1279px) {
-  #logo img {
-    width: 997px; } }
-@media(min-width: 992px) and (max-width: 1012px) {
-  #logo img {
-    width: 976px; } }
-@media(min-width: 768px) and (max-width: 991px) {
-  #logo img {
-    width: 752px; } }
+    height: auto;
+    width: inherit; }
 
 /*# sourceMappingURL=style.css.map */

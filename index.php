@@ -32,6 +32,7 @@ $viewportHeight = $this->params->get('viewportHeight');
 $containerColor = $this->params->get('containerColor');
 $menuActiveColor = $this->params->get('menuActiveColor');
 $menuHoverColor = $this->params->get('menuHoverColor');
+$containerWidth = $this->params->get('containerWidth');
 $url = $this->baseurl;
 
 
@@ -80,6 +81,11 @@ if ($menuHoverColor) {
     $menuHColor = " #navigation nav > div > div > .nav > li a:hover {background-color: $menuHoverColor;}";
 }
 
+if ($containerWidth) {
+    $cW = "$containerWidth";
+}
+
+
 ?>
 <!DOCTYPE html>
 <html lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>">
@@ -101,15 +107,15 @@ if ($menuHoverColor) {
 
 
 
-<nav class="container-xl ctn" id="navigation" role="navigation" >
+<nav class="container-<?php echo $cW; ?> ctn" id="navigation" role="navigation" >
 	<jdoc:include type="modules" name="Navigation" style="none" />
 </nav>
 
-<div class="container-xl " id="logo">
+<div class="container-<?php echo $cW; ?> " id="logo">
     <?php echo $logoLn; ?>
 </div>
 
-<div class="container-xl ctn" style="<?php echo $vh ?>">
+<div class="container-<?php echo $cW; ?> ctn" style="<?php echo $vh; ?>">
     <div class="row">
         <aside class="col-lg-<?php echo $leftasidewidth; ?> " id="leftaside">
             <div>
@@ -127,11 +133,11 @@ if ($menuHoverColor) {
     </div>
 </div>
 
-<div class="container-xl ctn" id="breadcrumbs">
+<div class="container-<?php echo $cW; ?> ctn" id="breadcrumbs">
     <jdoc:include type="modules" name="Breadcrumbs"  />
 </div>
 
-<footer class="container-xl ctn" id="footer">
+<footer class="container-<?php echo $cW; ?> ctn" id="footer">
 	<jdoc:include type="modules" name="footer" style="none" />
 
 </footer>
