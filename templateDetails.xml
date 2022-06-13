@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="template" version="3.8" client="site" method="upgrade">
        <name>barracuda</name>
-       <version>1.0.1.220613</version>
-       <creationDate>13 November 2021</creationDate>
+       <version>1.0.1.2206131</version>
+       <creationDate>13 June 2022</creationDate>
        <author>Mikhail Shumeyko</author>
        <authorEmail>shumeykomv@serverproject.ru</authorEmail>
        <authorUrl>https://serverproject.ru</authorUrl>
        <copyright>Copyright (C) 2020 Mikhail Shumeyko. All rights reserved.</copyright>
        <description>TPL_BARRACUDA_XML_DESCRIPTION</description>
-
        <files>
               <filename>component.php</filename>
               <filename>error.php</filename>
@@ -24,7 +23,6 @@
               <folder>js</folder>
               <folder>language</folder>
        </files>
-
        <positions>
               <position>Navigation</position>
               <position>LeftAside</position>
@@ -40,7 +38,6 @@
               <language tag="ru-RU">ru-RU/ru-RU.tpl_barracuda.ini</language>
               <language tag="ru-RU">ru-RU/ru-RU.tpl_barracuda.sys.ini</language>
        </languages>
-
        <config>
               <fields name="params">
               <fieldset name="advanced">
@@ -69,10 +66,9 @@
                             default="#1c1f1c"
                             label="TPL_BARRACUDA_LOGOTYPE_BACKGROUNDCOLOR"
                             description="TPL_BARRACUDA_LOGOTYPE_BACKGROUNDCOLOR_DESC"/>
-
                      <field name="containerWidth"
                             type="radio"
-                            default="sm"
+                            default="fluid"
                             label="TPL_BARRACUDA_CONTAINER_WIDTH"
                             description="TPL_BARRACUDA_CONTAINER_WIDTH_DESC">
                             <option value="sm">540 px</option>
@@ -110,6 +106,7 @@
        </config>
        <updateservers>
               <!-- Заметка: Не допускается пробелов или переносов строк между тэгам server -->
-              <server type="extension" priority="1" name="Сайт обновлений шаблона Barracuda">http://update.serverproject.ru/barracuda_TPL.xml</server>
+              <server type="extension" priority="1" name="Сайт обновлений шаблона Barracuda">https://update.serverproject.ru/barracuda_TPL.xml</server>
+              <server type="extension" priority="2" name="Сайт обновлений шаблона Barracuda">http://update.serverproject.ru/barracuda_TPL.xml</server>
        </updateservers>
 </extension>
