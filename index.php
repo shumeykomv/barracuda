@@ -43,7 +43,7 @@ else {
     $logo = '';
 }
 
-if ($logotypeLink == On) {
+if ($logotypeLink == 'On') {
     $logoLn = '<a href="'.$url . '">'.$logo.'</a>';
 }
 else {
@@ -51,7 +51,7 @@ else {
 }
 
 if ($backgroundImage) {
-    $background = ':root {background-image: url('.JUri::root().$backgroundImage.'); background-attachment: fixed; background-size: 100%;}';
+    $background = ':root {background-image: url('.JUri::root().$backgroundImage.'); background-attachment: fixed; background-size: 100%;} body {background: none}';
 }
 else {
     $background = ':root {background:'.$backgroundColor.';}';
