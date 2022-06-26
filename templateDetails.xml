@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="template" version="3.8" client="site" method="upgrade">
        <name>barracuda</name>
-       <version>1.0.1.2206132</version>
+       <version>1.0.1.2206131</version>
        <creationDate>13 June 2022</creationDate>
        <author>Mikhail Shumeyko</author>
        <authorEmail>shumeykomv@serverproject.ru</authorEmail>
